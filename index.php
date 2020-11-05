@@ -19,10 +19,19 @@ echo json_encode($lista);
 echo json_encode($search);*/
 
 //Carrega um usuário se login e senha estiver correto;
+/*
 $usuario = new Usuario();
 $usuario->login("lamo","dragon");
-
 echo $usuario;
+*/
+
+//Inserir usuário novo
+
+$aluno = new Usuario("aluno", "@lun0");
+
+$aluno->insert();
+
+echo $aluno;
 
 
 
