@@ -26,12 +26,22 @@ echo $usuario;
 */
 
 //Inserir usuário novo
-
-$aluno = new Usuario("aluno", "@lun0");
-
+/*
+$aluno = new Usuario("alunoz", "@lun0");
 $aluno->insert();
-
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(50);
+
+$usuario->update("professor", "!@#$%^&");
+
+echo $usuario;
+
+
+
 
 
 
